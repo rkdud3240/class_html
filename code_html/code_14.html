@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 20px;
+            background-color: red;
+        }
+
+        .container {
+            background-color: yellow;
+            left: 20px;
+            top: 20px;
+            width: 500px;
+            height: 500px;
+            overflow-y: scroll;
+            /* position: relative; */
+
+            /* width: 70px;
+            height: 1000px; */
+        }
+
+        .box {
+            background-color: blue;
+            left: 20px;
+            top: 20px;
+            width: 50px;
+            height: 50px;
+            /* position변경 */
+            /* position: static; */
+            /* 원래 있어야하는 자리에 존재 기본값*/
+            /* position: relative; */
+            /* 원래 있던 자리에서 left 20 top 20 */
+            /* position: fixed; */
+            /* 부모박스(상자) 기준에서 나와서 페이지 기준으로 left 20 top 20 */
+            /* position: absolute; */
+            /* 부모박스(상자) 기준으로 left 20 top 20 옮겨감 */
+            position: sticky;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>1</div>
+        <div class="box">2, box</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+    </div>
+</body>
+
+</html>
