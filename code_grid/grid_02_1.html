@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-con {
+            /* grid는 항상 디스플레이 속성을  grid 로 줘야한다. */
+            display: grid;
+            border: 5px solid rgba(0, 0, 0, 0.8);
+            grid-template-columns: 100px 1fr 1fr;
+            background-color: yellowgreen;
+            padding: 10px;
+            color: #fff;
+        }
+
+        .grid-con div {
+            border: 1px solid #fff;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Grid Elements</h1>
+    <div class="grid-con">
+        <div class="grid_item">1</div>
+        <div class="grid_item">2</div>
+        <div class="grid_item">3</div>
+        <div class="grid_item">4</div>
+        <div class="grid_item">5</div>
+        <div class="grid_item">6</div>
+        <div class="grid_item">7</div>
+        <div class="grid_item">8</div>
+        <div class="grid_item">9</div>
+    </div>
+</body>
+
+</html>

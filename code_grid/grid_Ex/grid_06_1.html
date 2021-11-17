@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            background-color: #fff;
+            border: 5px solid #000;
+            width: 700px;
+            height: 200px;
+            display: grid;
+            /* justify-items 수평정렬 */
+            justify-items: stretch;
+            /* align-items 수직정렬 */
+            /* 둘다 stretch가 기본값 */
+            /* align-items: center; */
+            grid-template-columns: auto auto;
+        }
+
+        .parent div {
+            background-color: #ddd;
+            font-size: 30px;
+            text-align: center;
+            width: 100px;
+            height: 100px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div>1</div>
+        <div>2</div>
+    </div>
+</body>
+
+</html>
