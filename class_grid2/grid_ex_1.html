@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid_ex_1</title>
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+
+    /* .wrap {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        gap: 10px;
+        height: 100vh;
+    } */
+    .wrap {
+        display: grid;
+        grid-template-columns: 300px 1fr 300px;
+        grid-template-rows: 100px auto 100px;
+        gap: 10px;
+        height: 100vh;
+    }
+
+    /* .wrap div {
+        border: 1px solid #000;
+        display: grid;
+        height: 650px;
+        justify-items: center;
+        align-items: center;
+        background-color: skyblue;
+    } */
+    .wrap div {
+        border: 1px solid #000;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        background-color: skyblue;
+    }
+
+    /* div:nth-child(1),
+    div:nth-child(5) {
+        grid-column: 1 / span 3;
+        height: 12vh;
+    } */
+    .wrap div:nth-child(1) {
+        grid-column: 1 /span 3;
+    }
+
+    .wrap div:nth-child(5) {
+        grid-column: 1 / span 3;
+    }
+</style>
+
+<body>
+    <div class="wrap">
+        <div class="">header</div>
+        <div>menu</div>
+        <div>main</div>
+        <div>aside</div>
+        <div>footer</div>
+    </div>
+</body>
+
+</html>
