@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .wrap {
+            display: grid;
+            grid-template-columns: 15% auto;
+            grid-template-rows: 150px auto 150px;
+            background-color: rgb(131, 127, 81);
+            grid-template-areas:
+                'header header header'
+                'nav content content'
+                'footer footer footer';
+            height: 100vh;
+        }
+
+        .wrap div {
+            padding: 20px;
+        }
+
+        .header {
+            background-color: crimson;
+            grid-area: header;
+            text-align: center;
+            font-weight: bold;
+            font-size: 50px;
+        }
+
+        .nav {
+            background-color: violet;
+            grid-area: nav;
+            margin: 0 0 0 -30px;
+
+        }
+
+        .nav ul li a {
+            font-weight: bold;
+            font-size: 20px;
+            color: #000;
+        }
+
+        .nav ul li a:hover {
+            color: tomato;
+        }
+
+        .content {
+            background-color: orange;
+            grid-area: content;
+            text-align: justify;
+
+        }
+
+        .content h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .imgandp {
+            clear: both;
+            display: block;
+            content: '';
+        }
+
+        .imgandp>img {
+            width: 300px;
+            text-align: left;
+            float: left;
+        }
+
+        .footer {
+            background-color: yellowgreen;
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="wrap">
+        <div class="header">header</div>
+        <div class="nav">
+            <ul>
+                <li><a href="#">nav_1</a></li>
+                <li><a href="#">nav_2</a></li>
+                <li><a href="#">nav_3</a></li>
+                <li><a href="#">nav_4</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>content</h2>
+            <div class="imgandp">
+                <img src="https://joshua1988.github.io/images/posts/web/layout.png" alt="grid 레이아웃">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore vitae unde iste mollitia dolorum
+                    quae dolor omnis nesciunt velit, asperiores hic facere harum cum explicabo laudantium dolorem
+                    sapiente
+                    qui
+                    officia Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore vitae unde iste mollitia
+                    dolorum
+                    quae dolor omnis nesciunt velit, asperiores hic facere harum cum explicabo laudantium dolorem
+                    sapiente
+                    qui officia Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore vitae unde iste mollitia
+                    dolorum quae
+                    dolor omnis nesciunt velit, asperiores hic facere harum cum explicabo laudantium dolorem sapiente
+                    qui
+                    officia Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore vitae unde iste mollitia
+                    dolorum
+                    quae dolor omnis nesciunt velit, asperiores hic facere harum cum explicabo laudantium dolorem
+                    sapiente
+                    qui officia Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore vitae unde iste mollitia
+                    dolorum quae
+                    dolor omnis nesciunt velit, asperiores hic facere harum cum explicabo laudantium dolorem sapiente
+                    qui
+                    officia Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore vitae unde iste mollitia
+                    dolorum
+                    quae dolor omnis nesciunt velit, asperiores hic facere harum cum explicabo laudantium dolorem
+                    sapiente
+                </p>
+            </div>
+        </div>
+        <div class="footer">
+            <h3>footer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, itaque libero, eum natus ipsa non
+                temporibus quod nostrum voluptates ea qui a et dolores asperiores minima, possimus fugiat quisquam
+                perspiciatis.</p>
+        </div>
+    </div>
+</body>
+
+</html>
