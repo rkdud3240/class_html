@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: verdana;
+        }
+
+        .frame {
+            display: grid;
+            grid-template-columns: repeat (5, auto);
+            grid-template-areas:
+                'd1 d2 d2'
+                'd1 d5 d3'
+                'd4 d4 d3';
+            gap: 10px;
+            height: 100vh;
+        }
+
+        .frame div {
+            border: 1px solid #000;
+            background-color: gold;
+            font-size: 30px;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .d1 {
+            grid-area: d1;
+            display: grid;
+            grid-template-columns: repeat (3, auto);
+            grid-template-areas:
+                'sub1 sub2'
+                'sub3 sub3';
+            font-size: 30px;
+            font-weight: bold;
+            font-family: courier;
+            color: #999;
+        }
+
+        .d1 div {
+            border: 1px solid #999;
+            background-color: chartreuse;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            justify-self: stretch;
+            align-self: stretch;
+        }
+
+        .d1 .sub1 {
+            grid-area: sub1;
+        }
+
+        .d1 .sub2 {
+            grid-area: sub2;
+        }
+
+        .d1 .sub3 {
+            grid-area: sub3;
+        }
+
+        .d2 {
+            grid-area: d2;
+        }
+
+        .d3 {
+            grid-area: d3;
+        }
+
+        .d4 {
+            grid-area: d4;
+        }
+
+        .d5 {
+            grid-area: d5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="frame">
+        <div class="d1">
+            <div class="sub1">sub1</div>
+            <div class="sub2">sub2</div>
+            <div class="sub3">sub3</div>
+
+        </div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+        <div class="d4">4</div>
+        <div class="d5">5</div>
+    </div>
+</body>
+
+</html>
