@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid_11_3</title>
+    <style>
+        .parent {
+            border: 1px solid #333;
+            width: 700px;
+            background-color: #a29bfe;
+            display: grid;
+            /* grid-template-columns: repeat(3, minmax(250px, 1fr)); */
+            /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
+            /* autp-fill :최소값 100씩 만들고 자신의 크기 유지 */
+            /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
+            /* autp-fit :부모의 크기만큼 채워줌 */
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        }
+
+        .parent div {
+            border-radius: 5px;
+            margin: 10px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</body>
+
+</html>

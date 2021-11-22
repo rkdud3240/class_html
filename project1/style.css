@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+    font-family: arial;
+}    
+.face-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 5px;
+
+}
+
+.face-gallery img {
+    min-width: 100%;
+}

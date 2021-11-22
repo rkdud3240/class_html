@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.face-gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 5px;
+}
+
+.face-gallery img{
+    min-width: 100%;
+    width: 300px;
+    height: 250px;
+}

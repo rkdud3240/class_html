@@ -1,0 +1,108 @@
+body{
+    margin: 0;   
+    color: #222;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Best Seller */
+.container{
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.best-seller{
+    width: 1230px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 30px 30px;
+}
+.best-header{
+    font-size: 22px;
+    padding-left: 0px;
+
+}
+.items-inner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.bg {
+    width:60px;
+    height:100px;
+}
+.bg>a{
+    display: block;
+    background: url(./images/num.jpg);
+    width: 100%;
+    height: 100%;
+    text-indent:-9999px; 
+}
+.one>a{
+    background-position: -50px 0; 
+}
+.two>a{
+    background-position: -115px 0; 
+}
+.three>a{
+    background-position: -173px 0; 
+}
+.four>a{
+    background-position: -235px 0; 
+}
+.five>a{
+    background-position: -290px -120px; 
+}
+.six>a{
+    background-position: -350px -120px;
+}
+.seven>a{
+    background-position: -110px -120px;
+}
+.eight>a{
+    background-position: -169px -120px;
+}
+.nine>a{
+    background-position: -230px -120px;
+}
+.name span{
+    display: block;
+    color: royalblue;
+}
+
+.item:hover .name{
+    color: red;
+}
+/* Tablet */
+@media (min-width: 768px) and (max-width:1024px) {
+    .container{
+        align-items: start;
+    }
+    .best-seller{
+        width: 100%;
+        box-shadow: none;
+        border-radius: 0;
+    }
+    .items-inner{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+/* Mobile */
+@media (max-width:767px) {
+    /* 한줄로 변경 */
+    .container{
+        align-items: start;
+    }
+    .best-seller{
+        width: 100%;
+        box-shadow: none;
+        border-radius: 0;
+    }
+    .items-inner{
+        grid-template-columns: 1fr;
+    }
+}
